@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nor's Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Nor's Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home" title="Home"><i class="fas fa-home"></i></a></li>
+                    <li><a href="index.html#about" title="About"><i class="fas fa-user"></i></a></li>
+                    <li><a href="index.html#skills" title="Skills"><i class="fas fa-code"></i></a></li>
+                    <li><a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a></li>
+                    <li><a href="index.html#contact" title="Contact"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="school">School Task</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-category="web">
+                        <img src="/img/personal blog web.png" alt="Personal Blog Website">
+                        <div class="project-info">
+                            <h3>Personal Blog Website</h3>
+                            <p>A responsive blog platform built with HTML, CSS, and JavaScript. Features dynamic content loading and a clean, modern design.</p>
+                            <span class="category">Web</span>
+                        </div>
+                    </article>
+                    <article class="project-card" data-category="design">
+                        <img src="/img/figma.jpg" alt="Logo Design for Local Business">
+                        <div class="project-info">
+                            <h3>Logo Design for Local Business</h3>
+                            <p>Created a professional logo for a local café using Figma. Incorporated brand colors and modern design principles.</p>
+                            <span class="category">Design</span>
+                        </div>
+                    </article>
+                    <article class="project-card" data-category="school">
+                        <img src="/img/database.jpg" alt="School Database System">
+                        <div class="project-info">
+                            <h3>School Database System</h3>
+                            <p>A simple database management system for school records, built as a class project using basic web technologies.</p>
+                            <span class="category">School Task</span>
+                        </div>
+                    </article>
+                    <article class="project-card" data-category="design">
+                        <img src="/img/ui mockup.jpg" alt="Mobile App UI Mockup">
+                        <div class="project-info">
+                            <h3>Mobile App UI Mockup</h3>
+                            <p>Designed user interface mockups for a fitness tracking mobile app, focusing on user experience and intuitive navigation.</p>
+                            <span class="category">Design</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Norean T. Aspa. For school purposes only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
